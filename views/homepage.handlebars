@@ -1,0 +1,14 @@
+{{#each blogPosts as |blogPost| }}
+<div class="container">
+    <div class="row col">
+        <h2>
+            <a href="/blog_post/{{blogPost.id}}">{{blogPost.id}}</a>
+        </h2>
+        <p>
+
+            {{blogPost.topic}}
+            {{blogPost.comment}}
+        </p>
+    </div>
+</div>
+{{/each}}
