@@ -49,13 +49,27 @@ router.get('/blog_post/:id', async (req, res) => {
 
 //DO WE ADD A USER PROFILE PAGE ROUTE HERE?
 router.get('/login', (req, res) => {
-    if (req.session.logged_in) {
-        res.redirect('/');
-        return;
-    }
+    // if (req.session.logged_in) {
+    //     res.redirect('/');
+    //     return;
+    // }
 
     res.render('login');
 });
+
+router.post('/logout', (req, res) => {
+    console.log('logout route before if statement')
+
+    // if (req.session.logged_in) {
+    //     req.session.destroy(() => {
+    //         //CAN I CREATE A LOGOUT MESSAGE HERE IN JSON???
+    //         res.status(204).end();
+    //     });
+    // } else {
+    //     res.status(404).end();
+    // }
+});
+
 
 
 module.exports = router;

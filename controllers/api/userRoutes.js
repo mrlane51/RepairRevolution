@@ -39,6 +39,7 @@ router.post('/', async (req, res) => {
 router.post('/login', async (req, res) => {
     try {
         const userData = await User.findOne({ where: { email: req.body.email } });
+        console.log(userData);
 
         if (!userData) {
             res.status(400).json({ message: "Invalid email"});
@@ -65,15 +66,16 @@ router.post('/login', async (req, res) => {
 
 
 
-router.post('/logout', (req, res) => {
-    if (req.session.logged_in) {
-        req.session.destroy(() => {
-            //CAN I CREATE A LOGOUT MESSAGE HERE IN JSON???
-            res.status(204).json({message: "user successfully logged out"})
-        });
-    } else {
-        res.status(404).end();
-    }
-});
+// router.post('/logout', (req, res) => {
+//     console.log('logout route before if statement')
+//     if (req.session.logged_in) {
+//         req.session.destroy(() => {
+//             //CAN I CREATE A LOGOUT MESSAGE HERE IN JSON???
+//             res.status(204).end();
+//         });
+//     } else {
+//         res.status(404).end();
+//     }
+// });
 
 module.exports = router;

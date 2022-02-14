@@ -10,9 +10,9 @@ const loginFormHandler = async (event) => {
             body: JSON.stringify({ email, password }),
             headers: { 'Content-Type': 'application/json' },
         });
-
+        console.log('login post route is here')
         if (response.ok) {
-            document.location.replace('/homepage');
+            document.location.replace('/');
         } else {
             alert(response.statusText);
         }
