@@ -1,14 +1,7 @@
-{{#each blogPosts as |blogPost| }}
+<h3 class="center-align">About this blog:</h3>
+<p class="center container blue-grey lighten-4 flow-text">WRITE IN DESCRIPTION OF REPAIR BLOG HERE</p>
 <div class="container">
-    <div class="row col">
-        <h2>
-            <a href="/blog_post/{{blogPost.id}}">{{blogPost.id}}</a>
-        </h2>
-        <p>
-
-            {{blogPost.topic}}
-            {{blogPost.comment}}
-        </p>
-    </div>
-</div>
+{{#each blogPosts as |blogPost| }}
+{{> blog_post}}
 {{/each}}
+</div>

@@ -1,20 +1,23 @@
-<nav class="nav-extended">
-    <div class="nav-wrapper blue">
-        <a href="#" class="brand-logo">Technology Blog</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Login/Logout</i></a>
-        {{!-- need to add javascript for materilize to hide/show the sidenav-trigger --}}
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Login</i></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="/dashboard">Dashboard</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/logout">Logout</a></li>
-        </ul>
-    </div>
-    <div class="nav-content">
-        <ul class="tabs tabs-transparent">
-            {{#each blogPosts as |blogPost|}}
-            <li class="tab"><a class="active" href="/blog_post/{{blogPost.topic}}">{{blogPost.topic}}</a></li>
-            {{/each}}
-        </ul>
-    </div>
-</nav>
+    <div class="divider"></div>
+    <nav class="nav-extended">
+        <div class="nav-wrapper blue">
+            <a href="/" class="brand-logo">Technology Blog</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Login/Logout</i></a>
+            {{!-- need to add javascript for materilize to hide/show the sidenav-trigger --}}
+            <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Login</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Dashboard</a></li>
+
+                {{!-- {{#if logged_in}} --}}
+                <li><a class="" href="/login">Login</a></li>
+                {{!-- {{else}} --}}
+                <li><a id="logout">Logout</a></li>
+                {{!-- {{/if}} --}}
+            </ul>
+        </div>
+        <div class="nav-content blue">
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a class="active" href=""></a></li>
+            </ul>
+        </div>
+    </nav>
