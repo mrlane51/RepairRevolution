@@ -1,26 +1,38 @@
-// connect modules to seperate files
+const path = require('path');
 const express = require('express');
-const routes = require('./routes');
+const session = require('express-session');
+const exphbs = require('express-handlebars');
+const routes = require('./controllers');
+
 const sequelize = require('./config/connection');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-// Import subclass of model dev to sync with database
-// const Dev = require('../../models/dev');
-
-// creates an application from the node module
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// middleware for express
+const hbs = exphbs.create({});
+
+const sess = {
+    secret: 'Super secret secret',
+    cookie: {},
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+        db: sequelize
+    })
+};
+
+app.use(session(sess));
+
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')))
 
-//routes middleware
 app.use(routes);
 
-// Connect to the database before starting the Express.js server
-// Force true to drop/recreate table(s) on every sync/ server start
 sequelize.sync({ force: false }).then(() => {
-app.listen(PORT, () => console.log('Now listening'));
+    app.listen(PORT, () => console.log('Now listening to server'))
 });
-
-// change main back to index.js in pacakage.json later
