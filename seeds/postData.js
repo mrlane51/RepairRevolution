@@ -13,7 +13,7 @@ const postData = [
     },
     {
         "topic": "Apple introducing self-repair? thoughts?",
-        "comment": "Apple recently introuced self repair that will allow customers to attempt to service their iphones and soon Mac support will be coming. But its still very limited. What are your thoughts about it",
+        "comment": "Apple recently introduced self repair that will allow customers to attempt to service their iphones and soon Mac support will be coming. But its still very limited. What are your thoughts about it",
         
     }
 ];
