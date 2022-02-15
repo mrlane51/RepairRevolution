@@ -10,7 +10,7 @@ BlogPost.init(
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
-          },
+        },
         topic: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -38,7 +38,7 @@ BlogPost.init(
         freezeTableName: true,
         underscored: true,
         modelName: 'blog_post',
-      }
+    }
 );
 
 module.exports = BlogPost;
