@@ -9,23 +9,26 @@
         <div class="col">
             <div class="row">
                 <h4> Your Discussions: </h4>
-                <button class="btn waves-effect waves-light right" type="submit" name="action"> create Discussion</button>
             </div>
             <div class="col">
-                {{ blog_post }}
+                {{#each profile.blog_posts as |blog|}}
+                <p>{{ blog.topic }}</p>
+                <p>{{ blog.comment }}</p>
+                <p>{{ blog.date_created }}</p>
+                {{/each}}
             </div>
         </div>
         <hr>
-        <div class="col"> 
+        {{!-- <div class="col"> 
             <h4> Saved Discussions: </h4>
             <div>
                 {{ blog_post }}
-            </div>
+            </div> --}}
         </div>
 
     </div>
-    <div class= "col">
+    {{!-- <div class= "col">
         {{ profile }}
 
-    </div>
+    </div> --}}
 </div>
