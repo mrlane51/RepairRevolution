@@ -59,7 +59,7 @@ router.get('/login', (req, res) => {
 
 router.post('/logout', (req, res) => {
     console.log('logout route before if statement')
-
+    req.session.destroy(() => res.status(204).end())
     // if (req.session.logged_in) {
     //     req.session.destroy(() => {
     //         //CAN I CREATE A LOGOUT MESSAGE HERE IN JSON???
