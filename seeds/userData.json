@@ -1,18 +1,19 @@
+
+
 [
     {
-      "name": "Jimmy",
-      "email": "Jimmrox@gmail.com",
-      "password": "JimmothytheLion234"
+        "name": "byrd",
+        "email": "byrd@gmail.com",
+        "password": "password1234"
     },
     {
-      "name": "BirdDawg",
-      "email": "birdistheword@birddog.com",
-      "password": "haveYouHeard345"
+        "name": "user52",
+        "email": "jdoe@gmail.com",
+        "password": "coolPw2020"
     },
     {
-      "name": "Clev",
-      "email": "nameYourKidThis@yahoo.com",
-      "password": "Laz1"
+        "name": "sakura",
+        "email": "cherry@aol.com",
+        "password": "pass123!"
     }
-  ]
-  
+]
