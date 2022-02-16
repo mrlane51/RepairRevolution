@@ -1,18 +1,28 @@
 [
-    {
-      "name": "Jimmy",
-      "email": "Jimmrox@gmail.com",
-      "password": "JimmothytheLion234"
-    },
-    {
-      "name": "BirdDawg",
-      "email": "birdistheword@birddog.com",
-      "password": "haveYouHeard345"
-    },
-    {
-      "name": "Clev",
-      "email": "nameYourKidThis@yahoo.com",
-      "password": "Laz1"
-    }
-  ]
+  {
+      "name": "byrd",
+      "email": "byrd@gmail.com",
+      "password": "password1234"
+  },
+  {
+      "name": "user51",
+      "email": "jdoe@gmail.com",
+      "password": "islandboi"
+  },
+  {
+      "name": "sakura",
+      "email": "cherry@aol.com",
+      "password": "pass123!"
+  },
+  {
+      "name": "coolKid01",
+  "email": "koolkid@gmail.com",
+      "password": "imcool01"
+  },
+  {
+      "name": "vapeGod55",
+      "email": "bootcamp@aol.com",
+      "password": "drowssap321"
+  }
+]
   
