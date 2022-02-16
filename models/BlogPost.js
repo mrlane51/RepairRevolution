@@ -15,10 +15,10 @@ BlogPost.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        // title: {
-        //     type: DataTypes.STRING,
-        //     allowNull: false,
-        // },
+        title: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         comment: {
             type: DataTypes.STRING,
             allowNull: false,
