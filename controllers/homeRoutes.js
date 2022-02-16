@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { BlogPost, User } = require('../models');
-//const withAuth - require('../utils/auth');
+const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) =>{
     try {
@@ -47,27 +47,35 @@ router.get('/blog_post/:id', async (req, res) => {
     }
 });
 
+router.get('/blogForm', withAuth, async(req,res) =>{
+    console.log('this is the blogForm route')
+    if (!req.session.logged_in) {
+        res.redirect('/login');
+        return;
+    }
+    res.render('blogForm');
+});
+
 //DO WE ADD A USER PROFILE PAGE ROUTE HERE?
 router.get('/login', (req, res) => {
-    // if (req.session.logged_in) {
-    //     res.redirect('/');
-    //     return;
-    // }
+    if (req.session.logged_in) {
+        res.redirect('/');
+        return;
+    }
 
     res.render('login');
 });
 
 router.post('/logout', (req, res) => {
     console.log('logout route before if statement')
-    req.session.destroy(() => res.status(204).end())
-    // if (req.session.logged_in) {
-    //     req.session.destroy(() => {
-    //         //CAN I CREATE A LOGOUT MESSAGE HERE IN JSON???
-    //         res.status(204).end();
-    //     });
-    // } else {
-    //     res.status(404).end();
-    // }
+    if (req.session.logged_in) {
+        req.session.destroy(() => {
+            //CAN I CREATE A LOGOUT MESSAGE HERE IN JSON???
+            res.status(204).end();
+        });
+    } else {
+        res.status(404).end();
+    }
 });
 
 
