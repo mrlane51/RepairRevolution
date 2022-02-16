@@ -1,0 +1,147 @@
+/* needs to be included in handlebars */
+/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet"> */
+
+/* height and any absolute values (width/height) need to be adjusted */
+
+h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 62px;
+    line-height: 73px;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    display: flex;
+    text-transform: capitalize;
+    
+    color: #6A6A6A;
+}
+
+h4 {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 40px;
+    display: flex;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+hr {
+    border: 3px solid #000000;
+}
+
+/* dashboard */
+#discussionBtn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: lowercase;
+
+    color: #000000;
+
+    background: #F3F3F3;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* create discussion */
+form {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 41px;
+    text-transform: lowercase;
+
+    color: #000000;
+
+    border: 3px solid #000000;
+    box-sizing: border-box;
+}
+
+input {
+    height: 65px;
+
+    border: 3px solid #000000;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 241px;
+
+    border: 3px solid #000000;
+    box-sizing: border-box;
+}
+
+#subitBtn{
+    width: 589px;
+    height: 81px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: lowercase;
+
+    color: #000000;
+
+    background: #F3F3F3;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* profile */
+#profile{
+    width: 609px;
+    height: 855px;
+
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+#bolder{
+    font-weight:800;
+}
+
+/* topics */
+#topicsBtn{
+    height: 94px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #000000;
+
+    background: rgba(235, 235, 235, 0.4);
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
