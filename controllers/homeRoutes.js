@@ -47,6 +47,21 @@ router.get('/blog_post/:id', async (req, res) => {
     }
 });
 
+router.post('/', async (req, res) => {
+    try { 
+      const blogData = await BlogPost.create({
+      topic: req.body.topic,
+    //   possible addition: 
+    //   title: req.body.title,
+      comment: req.body.comment,
+    });
+    res.status(200).json(blogData)
+  } catch (err) {
+    res.status(400).json(err);
+  }
+  });
+  
+
 //DO WE ADD A USER PROFILE PAGE ROUTE HERE?
 
 router.get('/login')
