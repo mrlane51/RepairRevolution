@@ -1,29 +1,23 @@
-<div class="divider"></div>
-<nav class="nav-extended">
-    <div class="nav-wrapper blue">
-        <a href="/" class="brand-logo">Technology Blog</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Login/Logout</i></a>
-        {{!-- need to add javascript for materilize to hide/show the sidenav-trigger --}}
-        <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Login</i></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-
-            <li><a href="/blogForm"><button class="btn waves-effect waves-light right" type="submit" name="action"> create
+ <div class="divider"></div>
+    <nav class="nav-extended">
+        <div class="nav-wrapper black">
+            <a href="/" class="brand-logo" style="font-family: 'Source Code Pro', monospace;">REPAIR REVOLUTION</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Login/Logout</i></a>
+            {{!-- need to add javascript for materilize to hide/show the sidenav-trigger --}}
+            <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Login</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/blogForm"><button class="btn waves-effect waves-light right" type="submit" name="action"> create
                         Discussion</button></a></li>
-            <li><a href="/dashboard">Dashboard</a></li>
-            
-            {{!-- {{#if logged_in}} --}}
-            <li><a class="login" href="/login">Login</a></li>
-            {{!-- {{else}} --}}
-            <li><a class="logout">Logout</a></li>
-            {{!-- {{/if}} --}}
-        </ul>
-    </div>
-    <div class="nav-content blue">
-        <ul class="tabs tabs-transparent">
-            <li class="tab"><a class="active" href=""></a></li>
-        </ul>
-    </div>
-</nav>
+                <li><a href="/">Dashboard</a></li>
 
+                {{!-- {{#if logged_in}} --}}
+                <li><a class="login" href="/login">Login</a></li>
+                {{!-- {{else}} --}}
+                <li><a class="logout">Logout</a></li>
+                {{!-- {{/if}} --}}
+            </ul>
+        </div>
+    </nav>
 
 <script src="/js/logout.js"></script>
+

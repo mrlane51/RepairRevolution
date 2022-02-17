@@ -66,6 +66,19 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
+router.post('/comment', async (req,res) => {
+    console.log ('this is the comment route')
+        try {
+            const commentData = await Comments.create({
+            ...req.body,
+            user_id: req.session.user_id,
+        });
+        res.status(200).json({message: "comment successfully created"});
+    } catch (err) {
+        res.status(400).json({ message: "error posting comment"})
+    }
+})
+
 router.post('/logout', (req, res) => {
     console.log('logout route before if statement')
     if (req.session.logged_in) {
