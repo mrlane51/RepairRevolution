@@ -61,19 +61,4 @@ router.post('/login', async (req, res) => {
     }
 });
 
-
-
-
-// router.post('/logout', (req, res) => {
-//     console.log('logout route before if statement')
-//     if (req.session.logged_in) {
-//         req.session.destroy(() => {
-//             //CAN I CREATE A LOGOUT MESSAGE HERE IN JSON???
-//             res.status(204).end();
-//         });
-//     } else {
-//         res.status(404).end();
-//     }
-// });
-
 module.exports = router;

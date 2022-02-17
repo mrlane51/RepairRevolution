@@ -1,28 +1,27 @@
 [
-  {
-      "name": "byrd",
-      "email": "byrd@gmail.com",
-      "password": "password1234"
-  },
-  {
-      "name": "user51",
-      "email": "jdoe@gmail.com",
-      "password": "islandboi"
-  },
-  {
-      "name": "sakura",
-      "email": "cherry@aol.com",
-      "password": "pass123!"
-  },
-  {
-      "name": "coolKid01",
-  "email": "koolkid@gmail.com",
-      "password": "imcool01"
-  },
-  {
-      "name": "vapeGod55",
-      "email": "bootcamp@aol.com",
-      "password": "drowssap321"
-  }
+    {
+        "name": "byrd",
+        "email": "byrd@gmail.com",
+        "password": "password1234"
+    },
+    {
+        "name": "user51",
+        "email": "jdoe@gmail.com",
+        "password": "islandboi"
+    },
+    {
+        "name": "sakura",
+        "email": "cherry@aol.com",
+        "password": "pass123!"
+    },
+    {
+        "name": "coolKid01",
+        "email": "koolkid@gmail.com",
+        "password": "imcool01"
+    },
+    {
+        "name": "vapeGod55",
+        "email": "bootcamp@aol.com",
+        "password": "drowssap321"
+    }
 ]
-  
