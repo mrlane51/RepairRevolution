@@ -2,7 +2,7 @@
 # Repair Revolution 
 [![License: ](https://img.shields.io/badge/license-MIT-brightgreen)](https://opensource.org/licenses/)
 #### **Name:** Honore Nelson, Leland Byrd, Nadia Pagaduan, Lizbet Rivera, Lane Lopez
-#### **Deployed Link:** 
+#### **Deployed Link:** https://repairrevolution.herokuapp.com/
 #### **Github Repo:** https://github.com/mrlane51/Project2
 ---
     
@@ -59,7 +59,7 @@
 
 ## Usage:
 ---
-Begin the application by opening the link provided (www.com), Create an account, and login! Want to add to this discussion? simply fill out the discussion form to ask a question about anything tech related!
+Begin the application by opening the link provided (https://repairrevolution.herokuapp.com/), Create an account, and login! Want to add to this discussion? simply fill out the discussion form to ask a question about anything tech related!
      
     
 ## Contribution Guidelines:
