@@ -23,10 +23,6 @@
 ---
 
 
-## Walkthrough:
----
-    
-
 ## Technologies Used:
 ---
 - **Bcrypt:** encripting user passwords to prevent hacking
