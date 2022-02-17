@@ -20,7 +20,7 @@
 
 
 ## Description:
----
+---The purpose of this assignment was to come together as a group and create a full stack application, where a Restful Api was created utilizing Node.js and Express.js. Handlebars.js were also utilized as a template engine, which enables us to use static template files in the application. Repair Revolution is an application that seeks to give people more options to repair their own things. Users are able to create their accounts and log in. Once logged in they are presented with a dashboard containing their profile. In the dashboard, the user is able to create their own discussions by clicking on the create discussion form and filling out the topic, title and description. Within the dashboard the user also has access to other discussions that they have saved and are able to explore other topics and view new discussions.
 
 
 ## Technologies Used:
